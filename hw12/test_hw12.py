@@ -8,7 +8,7 @@ XPATH:
 1.//span[@class="phone"]
 2.//input[@id='q']
 3.//*[contains(text(), 'Вхід для клієнта')]  #https://estore.ua/ua/customer/account/login/
-4.//button[@type = "button" and @onclick="window.location='https://estore.ua/ua/customer/account/create/';" ]
+4.//button[@type = "button" ]
 5.//button[@type="submit" and @id ="send2"] # login to cabinet
 6.//input[@type ="email"]
 7.//input[@id ="pass"]
@@ -21,7 +21,7 @@ XPATH:
 14.//div[@class="mobile-header mobile-item"]/following:: div[@id="mini-cart"]
 15.//span[@class="ib ib-hover ic ic-lg ic-facebook"]/parent::*
 16 //span[@class="ib ib-hover ic ic-lg ic-instagram"]/parent::*
-17.//div[@class="footer-primary-top"]/descendant:: div[@class="feature first last"]//a[@href="tel:+38 044 39 044 39"]
+17.//div[@class="feature first last"]/a
 18.//div[@class="footer-primary-top"]/descendant:: div[@id="callback-main"]/following:: a[@href="#callbacks"]
 19.//ul//div[@id="mini-account"]'
 20. //ul//*[@id="mini-account-wrapper-regular-slip"]/a
@@ -41,7 +41,7 @@ CSS:
 2. img[alt|="eStore"]
 3. login[username] #https://estore.ua/ua/customer/account/login/
 4. login[password] #https://estore.ua/ua/customer/account/login/
-5. a[href$="forgotpassword/"] #https://estore.ua/ua/customer/account/login/
+5. [title="Створити обліковий запис"] #https://estore.ua/ua/customer/account/login/
 6. button#send2.button
 7. div.social-links.ib-wrapper--round
 8. ul #mini-account-wrapper-regular-slip a
